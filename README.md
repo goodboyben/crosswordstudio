@@ -11,7 +11,7 @@ Most crossword makers are either expensive subscriptions or clunky websites fill
 * **Print Ready:** Export vector-perfect PDFs that never get cut off.
 
 ## 🚀 Quick Start
-1.  Download the latest **`CrosswordStudio.exe`** from the [Releases](#) tab.
+1.  Download the latest **`CrosswordStudio.exe`** from the Releases tab.
 2.  Double-click to run. (A browser window will open automatically).
 3.  Start building!
 
