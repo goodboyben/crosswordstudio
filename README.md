@@ -15,6 +15,8 @@ Most crossword makers are either expensive subscriptions or clunky websites fill
 2.  Double-click to run. (A browser window will open automatically).
 3.  Start building!
 
+> Tip: You can also access a hosted version of the application at https://goodboyben.github.io/crosswordstudio. Note that when using the hosted page, the local auto-save to your `./Puzzles` folder will not be available — this mode is intended for convenient access on mobile devices.
+
 ## 🛠️ Features
 * **AI Construction:** Type *"Ocean life"* and get a full puzzle in seconds.
 * **Brute Force Optimizer:** Algorithms ensure maximum word interlock.
@@ -38,3 +40,4 @@ pip install pyinstaller
 
 # 2. Build the silent executable
 python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data "CrosswordStudio.html;." --add-data "CrosswordStudio.ico;." server.py
+```
