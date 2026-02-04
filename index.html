@@ -1101,10 +1101,6 @@ async function generatePuzzle() {
         updateToggleButton();
         updateErrorBox(result, words.map(w => ({word: w.toUpperCase().replace(/[^A-Z]/g, ''), original: w})));
         
-        saveToBin();
-        document.getElementById('stepLoading').classList.add('hidden');
-        document.getElementById('stepResult').classList.remove('hidden');
-        
         // Auto-scroll to result
         window.scrollTo({ top: 0, behavior: 'smooth' });
         
@@ -2029,3 +2025,4 @@ function loadFromBinData(data) {
 </body>
 
 </html>
+
