@@ -6,7 +6,7 @@
 Most crossword makers are either expensive subscriptions or clunky websites filled with ads. 
 **Crossword Studio** is different:
 * **0% Cloud Storage:** Your puzzles are saved directly to your hard drive (`/Puzzles` folder).
-* **100% Portable:** It's a single `.exe` file. No installation. Run it from a USB stick.
+* **100% Portable:** It's a single `.exe` file. No installation. Run it from a USB drive.
 * **Smart AI:** Bring your own free Google AI API key for unlimited smart generation.
 * **Print Ready:** Export vector-perfect PDFs that never get cut off.
 
