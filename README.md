@@ -1,6 +1,6 @@
 # Crossword Studio
 
-**The privacy-focused, offline-first crossword generator.** *With Google Gemini/Gemma AI.*
+**The privacy-focused, offline crossword generator.** *With Google Gemini/Gemma AI.*
 
 ## ✨ Why this tool?
 Most crossword makers are either expensive subscriptions or clunky websites filled with ads. 
