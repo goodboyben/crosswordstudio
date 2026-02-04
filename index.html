@@ -2025,62 +2025,7 @@ function loadFromBinData(data) {
         alert("Draft Loaded: Words restored.");
     }
 }
-
-function saveToBin() {
-    const title = document.getElementById('puzzleTitleInput').value.trim() || "Untitled";
-    
-    // 1. Gather Data
-    const rows = document.querySelectorAll('#inputTableBody tr');
-    let savedInputs = [];
-    rows.forEach(row => {
-        const w = row.querySelector('.word-input').value;
-        const c = row.querySelector('.clue-input').value;
-        if(w || c) savedInputs.push({ w: w, c: c });
-    });
-
-    const saveData = {
-        title: title,
-        inputs: savedInputs,
-        puzzleData: currentPuzzleData
-    };
-
-    // 2. Send to Python Server ONLY (No browser download)
-    fetch('/save', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(saveData)
-    })
-    .then(response => {
-        if (response.ok) {
-            console.log("Server saved the file successfully.");
-            // Visual feedback on the button
-            const btn = document.querySelector('button[onclick="saveToBin()"]'); // Tries to find the manual save button
-            if (btn) {
-                const oldText = btn.innerHTML;
-                btn.innerHTML = '<i class="fas fa-check"></i> Saved!';
-                btn.classList.add('bg-green-600');
-                setTimeout(() => {
-                    btn.innerHTML = oldText;
-                    btn.classList.remove('bg-green-600');
-                }, 2000);
-            }
-        } else {
-            console.error("Server failed to save.");
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert("Server Error: Could not save to folder.\nCheck the black command window for details.");
-    });
-}    
-// --- HEARTBEAT: Auto-close server when browser closes ---
-setInterval(() => {
-    // Send a "pulse" to the server every second
-    fetch('/heartbeat', { method: 'POST' }).catch(() => {
-        // If server is already gone, do nothing
-    });
-}, 1000);
-
 </script>
 </body>
+
 </html>
