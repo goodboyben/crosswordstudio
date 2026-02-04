@@ -20,6 +20,7 @@ Most crossword makers are either expensive subscriptions or clunky websites fill
 * **Brute Force Optimizer:** Algorithms ensure maximum word interlock.
 * **Local Auto-Save:** Never lose work. Versions saved as `Puzzle (1).json`, `Puzzle (2).json`.
 * **Glassmorphism UI:** A beautiful, modern interface with Dark Mode support.
+* **Play:** Fill in the crossword puzzle digitally within the application.
 * **Export:** Save as PNG image or Print-ready PDF.
 
 ## 🔒 Privacy Note
