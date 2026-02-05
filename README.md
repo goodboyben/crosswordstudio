@@ -21,7 +21,7 @@ Most crossword makers are either expensive subscriptions or clunky websites fill
 1.  Download the latest **`CrosswordStudio.exe`** from the Releases tab.
 2.  Double-click to run. (A browser window will open automatically).
 
-> Tip: The HTML can be accessed at https://goodboyben.github.io/crosswordstudio. Note that when using the hosted page, the local auto-save will not function. This site is intended to be a preview and to allow for access on mobile devices. This is not the full, intended application.
+> Note: The HTML can be accessed at https://goodboyben.github.io/crosswordstudio. Note that when using the hosted page, the local auto-save will not function. This site is intended to be a preview and to allow for access on mobile devices. This is not the full, intended application.
 
 ## 🛠️ Features
 * **AI Construction:** Type *"Ocean life"* and get a full puzzle in seconds.
