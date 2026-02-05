@@ -1,4 +1,4 @@
-<img width="1571" height="147" alt="Screenshot 2026-02-05 152952" src="https://github.com/user-attachments/assets/ebc350b6-211d-48d5-a5ef-87c167866c82" />
+<img width="1485" height="147" alt="Screenshot 2026-02-05 152952" src="https://github.com/user-attachments/assets/95a31151-e324-4a10-b1e5-549330bed01f" />
 
 **The privacy-focused, modern, offline crossword generator.** 
 
