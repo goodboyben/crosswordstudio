@@ -3,6 +3,8 @@
 **The privacy-focused, modern, offline crossword generator.** 
 
 *With Google Gemini/Gemma AI.*
+
+
 /n
 
 ## ✨ Why this tool?
