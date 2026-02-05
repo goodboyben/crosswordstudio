@@ -20,9 +20,8 @@ Most crossword makers are either expensive subscriptions or clunky websites fill
 ## 🚀 Quick Start
 1.  Download the latest **`CrosswordStudio.exe`** from the Releases tab.
 2.  Double-click to run. (A browser window will open automatically).
-3.  Start building!
 
-> Tip: You can also access a hosted version of the application at https://goodboyben.github.io/crosswordstudio. Note that when using the hosted page, the local auto-save to your `./Puzzles` folder will not be available — this mode is intended for convenient access on mobile devices.
+> Tip: You can also access the HTML at https://goodboyben.github.io/crosswordstudio. Note that when using the hosted page, the local auto-save will not function. This site is intended to be a preview and to allow for access on mobile devices. This is not the full, intended application.
 
 ## 🛠️ Features
 * **AI Construction:** Type *"Ocean life"* and get a full puzzle in seconds.
