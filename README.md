@@ -4,8 +4,8 @@
 
 *With Google Gemini/Gemma AI.*
 
+<br>
 
-/n
 
 ## ✨ Why this tool?
 Most crossword makers are either expensive subscriptions or clunky websites filled with ads. 
