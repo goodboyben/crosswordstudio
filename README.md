@@ -39,5 +39,5 @@ If you prefer to run the raw Python script or build the EXE yourself:
 pip install pyinstaller
 
 # 2. Build the silent executable
-python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data "CrosswordStudio.html;." --add-data "CrosswordStudio.ico;." server.py
+python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data "CrosswordStudio.html;." --icon "CrosswordStudio.ico" server.py
 ```
