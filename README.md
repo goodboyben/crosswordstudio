@@ -53,15 +53,15 @@ python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data 
 
 # 🖼️ Photo Gallery
 
-## Generate anything with AI
+## 🤖 Generate anything with AI
 <img width="1915" height="939" alt="Screenshot 2026-02-04 152146" src="https://github.com/user-attachments/assets/b2a9833e-240a-4acf-b76e-15daa234ca7f" />
 
-## Lightning-fast, advanced algorithms ensure that many words cross (for more fun!)
+## ⚡ Lightning-fast, advanced algorithms ensure that many words cross (for more fun!)
 ![Screenshot_20260203_230659_Edge](https://github.com/user-attachments/assets/f9690c0e-d113-41a1-ae38-003af8b51a39)
 
 <img width="2180" height="3150" alt="The 50 States of America CrosswordStudio" src="https://github.com/user-attachments/assets/ffdba6c9-3f78-4611-b9a7-42d71b6f466c" />
 
-## Regenerate the layout as many times as you'd like
+## 🔁 Regenerate the layout as many times as you'd like
 
 > Example 2
 <img width="2180" height="3080" alt="The 50 States of America CrosswordStudio(2)" src="https://github.com/user-attachments/assets/fb50fe60-18e2-4089-8438-b45b54e363e6" />
@@ -69,10 +69,10 @@ python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data 
 > Example 3
 <img width="1880" height="3380" alt="The 50 States of America CrosswordStudio(1)" src="https://github.com/user-attachments/assets/4b3ee566-cdbd-4201-a9c3-5e34356db249" />
 
-## View, print, or download the answer sheet
+## 📄 View, print, or download the answer sheet
 <img width="2180" height="3080" alt="The 50 States of America CrosswordStudio Solution" src="https://github.com/user-attachments/assets/800b2244-b69c-44a9-842e-13429026b8a5" />
 
-## Get PDFs with or without answers
+## 🖨️ Get PDFs with or without answers
 
 > Puzzle
 <img width="1445" height="898" alt="Screenshot 2026-02-04 152734" src="https://github.com/user-attachments/assets/de057283-95fd-4296-a732-c832c2e695f5" />
@@ -80,7 +80,7 @@ python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data 
 >Answer key
 <img width="1448" height="898" alt="Screenshot 2026-02-04 152711" src="https://github.com/user-attachments/assets/a95b677d-3486-41a5-8118-afccfea54db5" />
 
-## PNGs and PDFs both come in HD
+## 🖼️ PNGs and PDFs both come in HD
 
 > PNG (HD)
 <img width="1911" height="927" alt="Screenshot 2026-02-04 152904" src="https://github.com/user-attachments/assets/88798567-2358-4773-8837-fa7eb026d7c9" />
@@ -88,22 +88,32 @@ python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data 
 > PDF (UHD)
 <img width="1868" height="898" alt="Screenshot 2026-02-04 152802" src="https://github.com/user-attachments/assets/b93451ef-e266-4ed9-a15b-93df64ce1fa5" />
 
-## Edit whatever the AI gives you
+## ✏️ Edit whatever the AI gives you
 <img width="1905" height="933" alt="Screenshot 2026-02-04 153150" src="https://github.com/user-attachments/assets/f862e14a-6744-480f-bec9-5114964b84fc" />
 
-## Don't forget to save unsaved work
+## 💾 Never forget to save unsaved work
 <img width="1916" height="932" alt="Screenshot 2026-02-04 153213" src="https://github.com/user-attachments/assets/913ee37b-23c8-4b9d-b785-a729c7a417bc" />
 
-## Find all of your auto-saved puzzles named and ready in the Puzzles folder
+## 📁 Find all of your auto-saved puzzles named and ready in the Puzzles folder
 <img width="1872" height="931" alt="Screenshot 2026-02-05 151724" src="https://github.com/user-attachments/assets/2757284b-bfeb-4089-9611-a0785f83d331" />
 
-## Solve the puzzle digitally
+## 🧩 Solve the puzzle digitally
 <img width="1909" height="932" alt="Screenshot 2026-02-04 152351" src="https://github.com/user-attachments/assets/20274148-501b-4033-ade0-b01713493253" />
 <img width="1897" height="937" alt="Screenshot 2026-02-04 152604" src="https://github.com/user-attachments/assets/50266739-5c45-4f1f-a76c-dd62f1ee5e80" />
 
-## Check your answers
+## ✅ Check your answers
 <img width="1900" height="931" alt="Screenshot 2026-02-04 153047" src="https://github.com/user-attachments/assets/17ae4133-9e66-4685-9b2c-d52eb45179c8" />
 <img width="1911" height="937" alt="Screenshot 2026-02-04 152955" src="https://github.com/user-attachments/assets/ad165c09-e666-46c0-a65e-a9c09998f102" />
 
-## Dark Mode
+## 🌙 Dark Mode
 <img width="1913" height="930" alt="Screenshot 2026-02-05 154120" src="https://github.com/user-attachments/assets/0e124fca-9d0f-4188-82d4-b1afe48679c3" />
+
+<br>
+<br>
+<br>
+
+<div align="center">
+
+## CrosswordStudio
+
+</div>
