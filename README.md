@@ -116,4 +116,6 @@ python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data 
 
 ## CrosswordStudio
 
+*Created by Goodboyben and the power of Gemini 3 Pro*
+
 </div>
