@@ -53,7 +53,7 @@ python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data 
 ## 🤖 Generate anything with AI
 <img width="1915" height="939" alt="Screenshot 2026-02-04 152146" src="https://github.com/user-attachments/assets/b2a9833e-240a-4acf-b76e-15daa234ca7f" />
 
-## ⚡ Lightning-fast, advanced algorithms ensure that many words cross (for more fun!)
+## ⚡ Lightning-fast, advanced algorithms ensure maximum word cross-overs (for more fun!)
 ![Screenshot_20260203_230659_Edge](https://github.com/user-attachments/assets/f9690c0e-d113-41a1-ae38-003af8b51a39)
 
 <img width="2180" height="3150" alt="The 50 States of America CrosswordStudio" src="https://github.com/user-attachments/assets/ffdba6c9-3f78-4611-b9a7-42d71b6f466c" />
