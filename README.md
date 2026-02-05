@@ -3,15 +3,7 @@
 **The privacy-focused, modern, offline crossword generator.** 
 
 *With Google Gemini/Gemma AI.*
-
-
-
-
-
-
-
-
-
+/n
 
 ## ✨ Why this tool?
 Most crossword makers are either expensive subscriptions or clunky websites filled with ads. 
