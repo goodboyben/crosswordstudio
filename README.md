@@ -101,3 +101,6 @@ python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data 
 ## Check your answers
 <img width="1900" height="931" alt="Screenshot 2026-02-04 153047" src="https://github.com/user-attachments/assets/17ae4133-9e66-4685-9b2c-d52eb45179c8" />
 <img width="1911" height="937" alt="Screenshot 2026-02-04 152955" src="https://github.com/user-attachments/assets/ad165c09-e666-46c0-a65e-a9c09998f102" />
+
+## Dark Mode
+<img width="1913" height="930" alt="Screenshot 2026-02-05 154120" src="https://github.com/user-attachments/assets/0e124fca-9d0f-4188-82d4-b1afe48679c3" />
