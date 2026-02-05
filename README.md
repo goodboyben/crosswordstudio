@@ -1,6 +1,6 @@
 # Crossword Studio
 
-**The privacy-focused, offline crossword generator.** *With Google Gemini/Gemma AI.*
+**The privacy-focused, offline crossword generator; the greatest to ever exist.** *With Google Gemini/Gemma AI.*
 
 ## ✨ Why this tool?
 Most crossword makers are either expensive subscriptions or clunky websites filled with ads. 
@@ -21,7 +21,7 @@ Most crossword makers are either expensive subscriptions or clunky websites fill
 * **AI Construction:** Type *"Ocean life"* and get a full puzzle in seconds.
 * **Brute Force Optimizer:** Algorithms ensure maximum word interlock.
 * **Local Auto-Save:** Never lose work. Versions saved as `Puzzle (1).json`, `Puzzle (2).json`.
-* **Glassmorphism UI:** A beautiful, modern interface with Dark Mode support (quadruple click the background anywhere for dark mode).
+* **Glassmorphism UI:** A beautiful, modern interface with Dark Mode support (quadruple-click the background anywhere for dark mode).
 * **Play:** Fill in the crossword puzzle digitally within the application.
 * **Export:** Save as PNG image or Print-ready PDF.
 
