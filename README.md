@@ -2,7 +2,7 @@
 
 **The privacy-focused, modern, offline crossword generator.** 
 
-*With Google Gemini/Gemma AI.*
+*Includes Google Gemini/Gemma AI.*
 
 <br>
 
