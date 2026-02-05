@@ -49,6 +49,7 @@ pip install pyinstaller
 python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data "CrosswordStudio.html;." --icon "CrosswordStudio.ico" server.py
 ```
 
+<br>
 
 # 🖼️ Photo Gallery
 
