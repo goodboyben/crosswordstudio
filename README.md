@@ -1,6 +1,7 @@
 <div align="center">
 
-![header](https://github.com/user-attachments/assets/1a440289-0e54-47ed-a7b7-5b95f9f6c4d0)
+![header](https://github.com/user-attachments/assets/e81272f6-b8a4-463e-ad24-8087116fcda1)
+
 
 **The privacy-focused, modern, offline crossword generator powered by AI.** 
 
