@@ -1,7 +1,10 @@
-<img width="1485" height="147" alt="Screenshot 2026-02-05 152952" src="https://github.com/user-attachments/assets/95a31151-e324-4a10-b1e5-549330bed01f" />
+<div align="center">
+
+![header](https://github.com/user-attachments/assets/ad42d377-e232-4914-9f77-1659c05836c7)<svg width="520" height="75" viewBox="0 7 520 75" xmlns="http://www.w3.org/2000/svg">
 
 **The privacy-focused, modern, offline crossword generator powered by AI.** 
 
+<div align="left">
 <br>
 
 
@@ -47,6 +50,7 @@ python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data 
 ```
 
 <br>
+<div align="center">
 
 # 🖼️ Photo Gallery
 
