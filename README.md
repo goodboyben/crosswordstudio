@@ -1,6 +1,6 @@
 <div align="center">
 
-![header](https://github.com/user-attachments/assets/ad42d377-e232-4914-9f77-1659c05836c7)<svg width="520" height="75" viewBox="0 7 520 75" xmlns="http://www.w3.org/2000/svg">
+![header](https://github.com/user-attachments/assets/1a440289-0e54-47ed-a7b7-5b95f9f6c4d0)
 
 **The privacy-focused, modern, offline crossword generator powered by AI.** 
 
