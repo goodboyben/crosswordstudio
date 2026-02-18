@@ -20,7 +20,7 @@ Most crossword makers are either expensive subscriptions or clunky websites fill
 ![545807423-7fd3f290-aaad-47f9-a5a4-26404dc75784](https://github.com/user-attachments/assets/034307ab-796c-41ac-a04e-b2ef038b8419)
 
 ## 🚀 Quick Start
-1.  Download the latest **`CrosswordStudio.exe`** from the Releases tab.
+1.  Download the latest **`CrosswordStudio.zip`** from the Releases tab.
 2.  Double-click to run. (A browser window will open automatically).
 
 > Note: The HTML can be accessed at https://goodboyben.github.io/crosswordstudio. Please be aware that while using the hosted page, the local auto-save will not function. This site is intended to be a preview and to allow for access on mobile devices. This is not the full, intended application.
