@@ -65,10 +65,20 @@ python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data 
 
 ## 🔁 Regenerate the layout as many times as you'd like
 
+<div align="left"> 
+
 > Example 2
+
+<div align="center">
+
 <img width="2180" height="3080" alt="The 50 States of America CrosswordStudio(2)" src="https://github.com/user-attachments/assets/fb50fe60-18e2-4089-8438-b45b54e363e6" />
 
+<div align="left"> 
+
 > Example 3
+
+<div align="center">
+
 <img width="1880" height="3380" alt="The 50 States of America CrosswordStudio(1)" src="https://github.com/user-attachments/assets/4b3ee566-cdbd-4201-a9c3-5e34356db249" />
 
 ## 📄 View, print, or download the answer sheet
@@ -76,18 +86,38 @@ python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data 
 
 ## 🖨️ Get PDFs with or without answers
 
+<div align="left"> 
+
 > Puzzle
+
+<div align="center">
+
 <img width="1445" height="898" alt="Screenshot 2026-02-04 152734" src="https://github.com/user-attachments/assets/de057283-95fd-4296-a732-c832c2e695f5" />
 
+<div align="left"> 
+
 >Answer key
+
+<div align="center">
+
 <img width="1448" height="898" alt="Screenshot 2026-02-04 152711" src="https://github.com/user-attachments/assets/a95b677d-3486-41a5-8118-afccfea54db5" />
 
 ## 🖼️ PNGs and PDFs both come in HD
 
+<div align="left"> 
+
 > PNG (HD)
+
+<div align="center">
+
 <img width="1911" height="927" alt="Screenshot 2026-02-04 152904" src="https://github.com/user-attachments/assets/88798567-2358-4773-8837-fa7eb026d7c9" />
 
+<div align="left"> 
+
 > PDF (UHD)
+
+<div align="center">
+
 <img width="1868" height="898" alt="Screenshot 2026-02-04 152802" src="https://github.com/user-attachments/assets/b93451ef-e266-4ed9-a15b-93df64ce1fa5" />
 
 ## ✏️ Edit whatever the AI gives you
@@ -114,10 +144,6 @@ python -m PyInstaller --noconsole --onefile --name "CrosswordStudio" --add-data 
 <br>
 <br>
 
-<div align="center">
-
 ## CrosswordStudio
 
 *Created by Goodboyben and the power of Gemini 3 Pro*
-
-</div>
