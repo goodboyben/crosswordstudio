@@ -3,7 +3,7 @@
 ![header](https://github.com/user-attachments/assets/e81272f6-b8a4-463e-ad24-8087116fcda1)
 
 
-**The privacy-focused, modern, offline crossword generator powered by AI** 
+**The modern, privacy-focused and offline crossword generator powered by AI** 
 
 <div align="left">
 <br>
