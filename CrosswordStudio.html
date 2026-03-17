@@ -1709,6 +1709,13 @@ for (let i = 2; i <= totalPages; i++) {
     doc.text(`Page ${i}`, pageWidth / 2, pageHeight - 8, { align: 'center' });
 }
 
+if (action === 'download') {
+        doc.save(title + ' CrosswordStudio.pdf');
+    } else {
+        window.open(doc.output('bloburl'));
+    }
+}
+
         function startInteractiveGame() {
             if(!currentPuzzleData) return;
             document.getElementById('stepResult').classList.add('hidden');
