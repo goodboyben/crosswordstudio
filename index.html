@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>CrosswordStudio</title>
-    <link rel="icon" href="/crosswordstudio/favicon.ico?v=3" type="image/x-icon">
-	<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     
@@ -1278,9 +1277,11 @@ function canPlace(grid, word, x, y, dir) {
         let cx = x + (dir === 'across' ? i : 0);
         let cy = y + (dir === 'down' ? i : 0);
         let letter = word[i];
+        let cell = grid[`${cx},${cy}`];
 
-        if (grid[`${cx},${cy}`]) {
-            if (grid[`${cx},${cy}`] !== letter) return false;
+        if (cell) {
+            if (cell.letter !== letter) return false;
+            if (cell[dir]) return false; 
         } else {
             let n1x = cx + (dir === 'across' ? 0 : -1);
             let n1y = cy + (dir === 'across' ? -1 : 0);
@@ -1298,7 +1299,7 @@ function countIntersections(grid, word, x, y, dir) {
     for (let i = 0; i < word.length; i++) {
         let cx = x + (dir === 'across' ? i : 0);
         let cy = y + (dir === 'down' ? i : 0);
-        if (grid[`${cx},${cy}`] === word[i]) count++;
+        if (grid[`${cx},${cy}`] && grid[`${cx},${cy}`].letter === word[i]) count++;
     }
     return count;
 }
@@ -1308,7 +1309,10 @@ function placeWord(grid, placedWords, wordObj, x, y, dir, number) {
     for (let i = 0; i < wordObj.word.length; i++) {
         let cx = x + (dir === 'across' ? i : 0);
         let cy = y + (dir === 'down' ? i : 0);
-        grid[`${cx},${cy}`] = wordObj.word[i];
+        if (!grid[`${cx},${cy}`]) {
+            grid[`${cx},${cy}`] = { letter: wordObj.word[i] };
+        }
+        grid[`${cx},${cy}`][dir] = true;
     }
 }
 
@@ -1655,51 +1659,62 @@ const cellSize = Math.min(maxCellWidth, maxCellHeight, 12);
             doc.setFont("helvetica", "normal");
 
             let startPage = doc.internal.getCurrentPageInfo().pageNumber;
-            let startYForColumns = yPos;
+let startYForColumns = yPos;
 
-            let currentY = startYForColumns;
-            across.forEach(w => {
-                const text = `${w.number}. ${stripAccents(w.clue)}`;
-                const lines = doc.splitTextToSize(text, colWidth);
-                if (currentY + (lines.length * 5) > pageHeight - margin) {
-                    doc.addPage();
-                    currentY = 20; 
-                }
-                doc.text(lines, margin, currentY);
-                currentY += (lines.length * 5) + 2;
-            });
+let currentY = startYForColumns;
+across.forEach(w => {
+    const text = `${w.number}. ${stripAccents(w.clue)}`;
+    const lines = doc.splitTextToSize(text, colWidth);
+    if (currentY + (lines.length * 5) > pageHeight - margin) {
+        doc.addPage();
+        doc.setFontSize(14);
+        doc.setFont("helvetica", "bold");
+        doc.text("ACROSS", margin, 20);
+        doc.setFontSize(10);
+        doc.setFont("helvetica", "normal");
+        currentY = 28;
+    }
+    doc.text(lines, margin, currentY);
+    currentY += (lines.length * 5) + 2;
+});
 
-            doc.setPage(startPage);
-            currentY = startYForColumns;
+doc.setPage(startPage);
+currentY = startYForColumns;
 
-            down.forEach(w => {
-                const text = `${w.number}. ${stripAccents(w.clue)}`;
-                const lines = doc.splitTextToSize(text, colWidth);
-                if (currentY + (lines.length * 5) > pageHeight - margin) {
-                    if (doc.internal.getCurrentPageInfo().pageNumber === doc.internal.getNumberOfPages()) {
-                        doc.addPage();
-                    } else {
-                        doc.setPage(doc.internal.getCurrentPageInfo().pageNumber + 1);
-                    }
-                    currentY = 20; 
-                }
-                doc.text(lines, col2X, currentY);
-                currentY += (lines.length * 5) + 2;
-            });
-
-           if (action === 'download') {
-                // 1. Get the title
-                let title = document.getElementById('puzzleTitleInput').value.trim() || "Puzzle";
-                // 2. Remove characters that might break filenames
-                title = title.replace(/[^a-z0-9 _-]/gi, '').trim();
-
-                // 3. Save as "Title CrosswordStudio.pdf"
-                const suffix = currentView === 'solution' ? ' Solution' : '';
-                doc.save(`${title} CrosswordStudio${suffix}.pdf`);
-            } else {
-                window.open(URL.createObjectURL(doc.output('blob')), '_blank');
-            }
+down.forEach(w => {
+    const text = `${w.number}. ${stripAccents(w.clue)}`;
+    const lines = doc.splitTextToSize(text, colWidth);
+    if (currentY + (lines.length * 5) > pageHeight - margin) {
+        if (doc.internal.getCurrentPageInfo().pageNumber === doc.internal.getNumberOfPages()) {
+            doc.addPage();
+        } else {
+            doc.setPage(doc.internal.getCurrentPageInfo().pageNumber + 1);
         }
+        doc.setFontSize(14);
+        doc.setFont("helvetica", "bold");
+        doc.text("DOWN", col2X, 20);
+        doc.setFontSize(10);
+        doc.setFont("helvetica", "normal");
+        currentY = 28;
+    }
+    doc.text(lines, col2X, currentY);
+    currentY += (lines.length * 5) + 2;
+});
+
+const totalPages = doc.internal.getNumberOfPages();
+for (let i = 2; i <= totalPages; i++) {
+    doc.setPage(i);
+    doc.setFontSize(10);
+    doc.setFont("helvetica", "normal");
+    doc.text(`Page ${i}`, pageWidth / 2, pageHeight - 8, { align: 'center' });
+}
+
+if (action === 'download') {
+        doc.save(title + ' CrosswordStudio.pdf');
+    } else {
+        window.open(doc.output('bloburl'));
+    }
+}
 
         function startInteractiveGame() {
             if(!currentPuzzleData) return;
@@ -2084,4 +2099,3 @@ setInterval(() => {
 </body>
 
 </html>
-
