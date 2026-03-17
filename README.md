@@ -9,7 +9,7 @@
 <br>
 
 
-## ✨ Why this tool?
+## ✨ Why CrosswordStudio?
 Most crossword makers are either expensive subscriptions or clunky websites filled with ads. 
 **CrosswordStudio** is different:
 * **0% Cloud Storage:** Your puzzles are saved directly to your hard drive (`/Puzzles` folder).
