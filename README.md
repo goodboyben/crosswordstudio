@@ -13,7 +13,7 @@
 Most crossword makers are either expensive subscriptions or clunky websites filled with ads. 
 **CrosswordStudio** is different:
 * **0% Cloud Storage:** Your puzzles are saved directly to your hard drive (`/Puzzles` folder).
-* **100% Portable:** It's a single `.exe` file with no installation; it can be run from a USB drive.
+* **100% Portable:** It's a single `.exe` file with no installation and can be run from a USB drive.
 * **Smart AI:** Bring your own free Google AI API key for unlimited smart generation.
 * **Print Ready:** Export vector-perfect PDFs that never get cut off.
 
@@ -21,7 +21,8 @@ Most crossword makers are either expensive subscriptions or clunky websites fill
 
 ## 🚀 Quick Start
 1.  Download the latest **`CrosswordStudio.zip`** from the Releases tab.
-2.  Double-click to run. (A browser window will open automatically).
+2.  Extract the contents of the `.zip` file (`CrosswordStudio.exe` and the `Puzzles` folder) to a local directory where you have full read/write permissions (`C:\CrosswordStudio` is recommended) to ensure the application runs correctly without requiring administrative privileges.
+3.  Run `CrosswordStudio.exe`. A browser window will open automatically.
 
 > Note: The HTML can be accessed at https://goodboyben.github.io/crosswordstudio. Please be aware that while using the hosted page, the local auto-save will not function. This site is intended to be a preview and to allow for access on mobile devices. This is not the full, intended application.
 
