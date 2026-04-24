@@ -209,7 +209,14 @@ body.dark-mode #aiSettingsView p {
             100% { transform: rotate(360deg); }
         }
 
-        #hiddenCanvas { position: absolute; left: -9999px; visibility: hidden; }
+        #hiddenCanvas { 
+    position: absolute; 
+    left: -9999px; 
+    top: -9999px;
+    opacity: 0.001; 
+    pointer-events: none; 
+    z-index: -1;
+}
 
         /* The Grid Container - Transparent */
         .cw-grid-container {
