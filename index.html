@@ -209,13 +209,12 @@ body.dark-mode #aiSettingsView p {
             100% { transform: rotate(360deg); }
         }
 
-        #hiddenCanvas { 
-    position: absolute; 
-    left: -9999px; 
-    top: -9999px;
-    opacity: 0.001; 
-    pointer-events: none; 
-    z-index: -1;
+        #hiddenCanvas {
+    position: absolute !important;
+    left: -9999px !important;
+    clip: rect(0, 0, 0, 0) !important;
+    clip-path: inset(50%) !important;
+    overflow: hidden !important;
 }
 
         /* The Grid Container - Transparent */
