@@ -26,6 +26,10 @@ Most crossword makers are either expensive subscriptions or clunky websites fill
 
 > Note: The HTML can be accessed at https://goodboyben.github.io/crosswordstudio. Please be aware that while using the hosted page, the local auto-save will not function. This site is intended to be a preview and to allow for access on mobile devices. This is not the full, intended application.
 
+### ⚠️ No Longer Compatible with Firefox
+
+Due to strict anti-canvas fingerprinting protocols and rendering limits introduced in the Firefox 150 update (April 2026), the main function of PNG and PDF generation will result in completely blank rendering. Please use a Chromium-based browser instead. 
+
 ## 🛠️ Features
 * **AI Construction:** Type *"Ocean life"* and get a full puzzle in seconds.
 * **Brute Force Optimizer:** Algorithms ensure maximum word interlock.
