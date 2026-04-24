@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>CrosswordStudio</title>
-    <link rel="icon" type="image/x-icon" href="CrosswordStudio.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-</head>
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Merriweather:wght@300;400;700&display=swap');
@@ -211,7 +209,7 @@ body.dark-mode #aiSettingsView p {
             100% { transform: rotate(360deg); }
         }
 
-        #hiddenCanvas { display: none; }
+        #hiddenCanvas { position: absolute; left: -9999px; visibility: hidden; }
 
         /* The Grid Container - Transparent */
         .cw-grid-container {
@@ -1714,7 +1712,13 @@ for (let i = 2; i <= totalPages; i++) {
 if (action === 'download') {
         doc.save(title + ' CrosswordStudio.pdf');
     } else {
-        window.open(doc.output('bloburl'));
+        const blobUrl = URL.createObjectURL(doc.output('blob'));
+    const link = document.createElement('a');
+    link.href = blobUrl;
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
     }
 }
 
@@ -1966,7 +1970,9 @@ if (action === 'download') {
             link.download = `${title} CrosswordStudio${suffix}.png`;
             
             link.href = document.getElementById('resultImage').src;
-            link.click();
+            document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
         }
         function editPuzzle() {
              document.getElementById('stepResult').classList.add('hidden');
