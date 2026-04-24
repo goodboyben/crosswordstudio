@@ -209,7 +209,7 @@ body.dark-mode #aiSettingsView p {
             100% { transform: rotate(360deg); }
         }
 
-        #hiddenCanvas { display: none; }
+        #hiddenCanvas { position: absolute; left: -9999px; visibility: hidden; }
 
         /* The Grid Container - Transparent */
         .cw-grid-container {
@@ -1712,7 +1712,13 @@ for (let i = 2; i <= totalPages; i++) {
 if (action === 'download') {
         doc.save(title + ' CrosswordStudio.pdf');
     } else {
-        window.open(doc.output('bloburl'));
+        const blobUrl = URL.createObjectURL(doc.output('blob'));
+    const link = document.createElement('a');
+    link.href = blobUrl;
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
     }
 }
 
@@ -1964,7 +1970,9 @@ if (action === 'download') {
             link.download = `${title} CrosswordStudio${suffix}.png`;
             
             link.href = document.getElementById('resultImage').src;
-            link.click();
+            document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
         }
         function editPuzzle() {
              document.getElementById('stepResult').classList.add('hidden');
