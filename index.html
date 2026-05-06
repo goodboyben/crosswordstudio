@@ -209,12 +209,13 @@ body.dark-mode #aiSettingsView p {
             100% { transform: rotate(360deg); }
         }
 
-        #hiddenCanvas {
-    position: absolute !important;
-    left: -9999px !important;
-    clip: rect(0, 0, 0, 0) !important;
-    clip-path: inset(50%) !important;
-    overflow: hidden !important;
+        #hiddenCanvas { 
+    position: absolute; 
+    left: -9999px; 
+    top: -9999px;
+    opacity: 0.001; 
+    pointer-events: none; 
+    z-index: -1;
 }
 
         /* The Grid Container - Transparent */
@@ -643,7 +644,7 @@ body.dark-mode #aiSettingsView p {
                 <label class="block text-slate-600 text-sm font-bold mb-2">Select Model:</label>
                 <select id="aiModelSelect" class="w-full p-2 border border-slate-300 rounded-xl text-sm outline-none focus:ring-2 focus:ring-purple-500 bg-white shadow-sm cursor-pointer">
                     <option value="gemini-flash-latest" selected>Gemini Flash (Fast)</option>
-                    <option value="gemma-3-27b-it">Gemma 3 27B-it</option>
+                    <option value="gemini-pro-latest">Gemini Pro (Smart)</option>
                 </select>
             </div>
 
@@ -2098,7 +2099,7 @@ function saveToBin() {
     })
     .catch(error => {
         console.error('Error:', error);
-        alert("Server Error: Could not save to folder.\nCheck the black command window for details.");
+        alert("Server Error: Could not save to folder.\nPlease restart the application.");
     });
 }    
 // --- HEARTBEAT: Auto-close server when browser closes ---
